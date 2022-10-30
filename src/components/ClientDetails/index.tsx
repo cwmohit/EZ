@@ -8,7 +8,7 @@ function ClientDetails() {
   // active tab
   const { client } = useContext(ClientContext);
   const [activeTab, setActiveTab] = useState(0);
-  const [activeEntry, setActiveEntry] = useState<number | null>(null);
+  const [activeEntry, setActiveEntry] = useState<number | null>(0);
   const ClientDetails = companies[client];
 
   if (!ClientDetails) return null;
